@@ -259,6 +259,9 @@ func main() {
 	http.HandleFunc("/add", addHandler)
 	http.HandleFunc("/remove", removeHandler)
 	http.HandleFunc("/modify", modifyHandler)
+	http.HandleFunc("/manifest.json", func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, "static/manifest.json")
+	})
 
 	fmt.Printf("\033[32mServer open, listening on port 10004\033[0m\n")
 	log.Fatal(http.ListenAndServe(":10004", nil))
