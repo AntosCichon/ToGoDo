@@ -19,3 +19,6 @@
 
 # Go workspace file
 go.work
+
+# Template for list.json file
+list.json.template
