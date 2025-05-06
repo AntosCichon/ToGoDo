@@ -19,7 +19,6 @@ $(".add").on('click', function() {
             colorize();
         },
         error: function(response) {
-            alert(response);
         }
     });
 });
@@ -45,7 +44,6 @@ $(document).on('click', '.remove', function() {
                 colorize();
             },
             error: function(response) {
-                alert("chuj cos nie poszlo");
             }
         });
 });
@@ -91,7 +89,6 @@ $(document).on('click', '.item p', function() {
             colorize();
         },
         error: function(response) {
-            alert(response);
         }
     });
 })
