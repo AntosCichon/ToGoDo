@@ -18,6 +18,9 @@ h1 {
     font-size: 4rem;
     margin-top: 20px;
 }
+h1 span {
+    color:#00ADD8;
+}
 
 #input {
     width: 75%;
@@ -47,7 +50,6 @@ h1 {
     width: 100%;
     margin-block: 20px;
     height: 5px;
-    -webkit-appearance: none;
     background: linear-gradient(to right,
       hsl(0, 100%, 50%),
       hsl(60, 100%, 50%),
