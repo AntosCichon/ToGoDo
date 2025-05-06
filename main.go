@@ -123,7 +123,6 @@ func rootHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Failed to read ToDos file", http.StatusInternalServerError)
 		return
 	}
-	w.Header().Set("Content-Security-Policy", "default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com")
 	tmpl := template.Must(template.ParseFiles("static/index.html"))
 	tmpl.Execute(w, entries)
 }
